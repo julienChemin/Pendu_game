@@ -34,7 +34,8 @@ class Game extends React.Component {
             word: getWord('5'),
             attempts: 8,
             attemptsLeft: 8,
-            guess: '',
+            currentGuess: '',
+            guesses: {},
             rightGuessesMap: Array(5).fill(false),
             wrongGuesses: [],
         }
@@ -51,11 +52,12 @@ class Game extends React.Component {
                 />
                 <GuessArea
                     attempts={this.state.attempts}
-                    guess={this.state.guess}
+                    guess={this.state.currentGuess}
                     wrongGuesses={this.state.wrongGuesses}
 
                 />
                 <Keyboard
+                    guesses={this.state.guesses}
                     handleGuess={this.handleGuess}
                 />
             </section>
@@ -67,6 +69,7 @@ class Game extends React.Component {
         let rightGuessesMap = this.state.rightGuessesMap;
         let wrongGuesses = this.state.wrongGuesses;
         let attemptsLeft = this.state.attemptsLeft;
+        let guesses = this.state.guesses;
 
         Array.from(this.state.word).map((letter, index) => {
             if (guess === letter) {
@@ -80,11 +83,14 @@ class Game extends React.Component {
             attemptsLeft -= 1;
         }
 
+        guesses[guess] = isRightGuess;
+
         this.setState({
             attemptsLeft: attemptsLeft,
-            guess: guess,
+            currentGuess: guess,
             rightGuessesMap: rightGuessesMap,
             wrongGuesses: wrongGuesses,
+            guesses: guesses,
         });
     }
 }

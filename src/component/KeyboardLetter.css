@@ -10,6 +10,16 @@
     border: solid 1px black;
 }
 
-.keyboardLetter:hover {
+.wrongKeyboardLetter {
+    color: red;
+    background-color: grey;
+}
+
+.goodKeyboardLetter {
+    color: green;
+    background-color: darkseagreen;
+}
+
+.keyboardLetter:hover:not(.wrongKeyboardLetter, .goodKeyboardLetter) {
     cursor: pointer;
 }

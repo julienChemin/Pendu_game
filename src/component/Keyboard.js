@@ -28,6 +28,7 @@ class Keyboard extends React.Component {
 
     render() {
         const keyboardRows = keyboards[`${this.state.language}KeyboardRows`];
+        const guesses = this.props.guesses;
 
         return (
             <div className='keyboard'>
@@ -37,6 +38,8 @@ class Keyboard extends React.Component {
                             <KeyboardLetter
                                 key={letter}
                                 value={letter}
+                                guessed={letter in guesses}
+                                isRightGuess={letter in guesses && guesses[letter]}
                                 handleClick={this.handleClick}
                             />
                         )}
