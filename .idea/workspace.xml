@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c559965-9f81-468b-830a-b8ce5cc29244" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Guess.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Guess.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Keyboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Keyboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Keyboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/KeyboardLetter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/KeyboardLetter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/KeyboardLetter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/KeyboardLetter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GuessArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GuessArea.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Letter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Letter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Word.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Word.js" afterDir="false" />
     </list>
@@ -103,7 +98,7 @@
       <workItem from="1645301013421" duration="7668000" />
       <workItem from="1645376088768" duration="632000" />
       <workItem from="1645465883353" duration="11168000" />
-      <workItem from="1645526645652" duration="11988000" />
+      <workItem from="1645526645652" duration="18950000" />
     </task>
     <servers />
   </component>

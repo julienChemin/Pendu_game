@@ -8,13 +8,13 @@ class GuessArea extends React.Component {
     }
 
     render() {
-        const wrongGuess = this.props.wrongGuess;
+        const wrongGuesses = this.props.wrongGuesses;
         const attempts = Array(this.props.attempts)
             .fill('')
             .map((attempt, index) =>
                 <Guess
                     key={index}
-                    value={wrongGuess[index] ? wrongGuess[index] : ''}
+                    value={wrongGuesses[index] ? wrongGuesses[index] : ''}
                 />
             );
 
