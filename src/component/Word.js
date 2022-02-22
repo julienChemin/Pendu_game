@@ -1,4 +1,5 @@
 import React from 'react';
+import Letter from './Letter.js';
 import './Word.css';
 
 class Word extends React.Component {
@@ -9,7 +10,13 @@ class Word extends React.Component {
     render() {
         return (
               <div className="word">
-                  {this.props.word}
+                  {Array.from(this.props.word).map((letter, index) =>
+                      <Letter
+                          key={index}
+                          value={letter}
+                      />
+                  )}
+                  <div>{this.props.word}</div>
               </div>
         );
     }

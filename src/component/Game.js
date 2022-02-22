@@ -1,6 +1,6 @@
 import React from 'react';
 import Word from './Word';
-import Guess from './Guess';
+import GuessArea from './GuessArea';
 import Keyboard from './Keyboard';
 import './Game.css';
 
@@ -17,7 +17,7 @@ function getWord(length) {
 }
 
 /**
- * @param {String} length
+ * @param {String} word
  * @returns {String}
  */
 function sanitizeWord(word) {
@@ -29,16 +29,46 @@ function sanitizeWord(word) {
 class Game extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            word: getWord('5'),
+            attempts: 8,
+            guess: '',
+            wrongGuess: [],
+        }
+
+        this.handleGuess = this.handleGuess.bind(this);
     }
 
     render() {
         return (
             <section id="gameScreen">
-                <Word word={getWord('5')} />
-                <Guess/>
-                <Keyboard/>
+                <Word
+                    word={this.state.word}
+                    guess={this.state.guess}
+                />
+                <GuessArea
+                    attempts={this.state.attempts}
+                    guess={this.state.guess}
+                    wrongGuess={this.state.wrongGuess}
+
+                />
+                <Keyboard
+                    handleGuess={this.handleGuess}
+                />
             </section>
         );
+    }
+
+    handleGuess(guess) {console.log(guess);
+        let output = {
+            isRight: false,
+            value:guess,
+        };
+
+        this.setState({
+            guess: guess,
+        });
     }
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Guess.css';
 
 class Guess extends React.Component {
     constructor(props) {
@@ -6,8 +7,12 @@ class Guess extends React.Component {
     }
 
     render() {
+        const classAttrValue = `guess ${this.props.value ? 'wrongGuess' : ''}`;
+
         return (
-            <div></div>
+            <span className={classAttrValue}>
+                {this.props.value}
+            </span>
         );
     }
 }

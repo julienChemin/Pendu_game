@@ -1,0 +1,15 @@
+.keyboardLetter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 40px;
+    margin: 5px 10px;
+
+    border: solid 1px black;
+}
+
+.keyboardLetter:hover {
+    cursor: pointer;
+}

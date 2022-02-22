@@ -1,5 +1,6 @@
 import React from 'react';
 import KeyboardLetter from './KeyboardLetter';
+import './Keyboard.css';
 
 const keyboards = {
     frenchKeyboardRows: [
@@ -21,25 +22,32 @@ class Keyboard extends React.Component {
         this.state = {
             language: 'french',
         }
+
+        this.handleClick = this.handleClick.bind(this);
     }
 
     render() {
         const keyboardRows = keyboards[`${this.state.language}KeyboardRows`];
 
         return (
-            <div>
+            <div className='keyboard'>
                 {keyboardRows.map((row, index) =>
                     <div key={index} className='keyboardRow'>
                         {row.map(letter =>
                             <KeyboardLetter
                                 key={letter}
                                 value={letter}
+                                handleClick={this.handleClick}
                             />
                         )}
                     </div>
                 )}
             </div>
         );
+    }
+
+    handleClick(e) {
+        this.props.handleGuess(e.currentTarget.textContent);
     }
 }
 
