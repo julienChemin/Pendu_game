@@ -1,0 +1,41 @@
+.hide {
+    display: none!important;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(40, 44, 52, 0.6);
+}
+
+.modalContent {
+    position: relative;
+    z-index: 10001;
+    width: min(1000px, 90%);
+    height: min(600px, 90%);
+
+    background-color: #282c34;
+    border: solid 1px darkgrey;
+}
+
+.closeModal {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+
+    font-size: 2em;
+    font-weight: bold;
+    color: darkred;
+
+    cursor: pointer;
+}

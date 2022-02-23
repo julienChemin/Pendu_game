@@ -50,12 +50,13 @@ class Game extends React.Component {
                     word={this.state.word}
                     rightGuessesMap={this.state.rightGuessesMap}
                 />
+
                 <GuessArea
                     attempts={this.state.attempts}
                     guess={this.state.currentGuess}
                     wrongGuesses={this.state.wrongGuesses}
-
                 />
+
                 <Keyboard
                     guesses={this.state.guesses}
                     handleGuess={this.handleGuess}
@@ -81,6 +82,10 @@ class Game extends React.Component {
         if (!isRightGuess) {
             wrongGuesses.push(guess);
             attemptsLeft -= 1;
+        }
+
+        if (attemptsLeft < 1) {
+            this.props.toggleModal();
         }
 
         guesses[guess] = isRightGuess;
