@@ -11,7 +11,6 @@
 }
 
 .wrongKeyboardLetter {
-    color: red;
     background-color: grey;
 }
 
@@ -20,6 +19,6 @@
     background-color: darkseagreen;
 }
 
-.keyboardLetter:hover:not(.wrongKeyboardLetter, .goodKeyboardLetter) {
+.clickable {
     cursor: pointer;
 }

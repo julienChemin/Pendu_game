@@ -9,25 +9,32 @@ class KeyboardLetter extends React.Component {
     }
 
     render() {
-        let className = 'keyboardLetter';
-
-        if (this.props.guessed) {
-            className += this.props.isRightGuess
-                ? ' goodKeyboardLetter'
-                : ' wrongKeyboardLetter';
-        }
-
         return (
             <span
-                className={className}
-                onClick={this.props.guessed
-                    ? null
-                    : this.handleClick
-                }
+                className={this.getClasses()}
+                onClick={this.getOnclickEvent()}
             >
                 {this.props.value}
             </span>
         );
+    }
+
+    getClasses() {
+        let classes = 'keyboardLetter';
+
+        classes += this.props.guessed
+            ? (this.props.isRightGuess
+                ? ' goodKeyboardLetter'
+                : ' wrongKeyboardLetter')
+            : ' clickable';
+
+        return classes;
+    }
+
+    getOnclickEvent() {
+        return this.props.guessed
+            ? null
+            : this.handleClick;
     }
 
     handleClick(e) {
