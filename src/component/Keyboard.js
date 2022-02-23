@@ -20,14 +20,20 @@ class Keyboard extends React.Component {
         super(props);
 
         this.state = {
-            language: 'french',
-        }
+            language: 'frenchKeyboard',
+        };
+
+        this.acceptedLanguage = [
+            'frenchKeyboard',
+            'englishKeyboard',
+        ];
 
         this.handleClick = this.handleClick.bind(this);
+        this.handleKeyboardLanguageChange = this.handleKeyboardLanguageChange.bind(this);
     }
 
     render() {
-        const keyboardRows = keyboards[`${this.state.language}KeyboardRows`];
+        const keyboardRows = keyboards[`${this.state.language}Rows`];
         const guesses = this.props.guesses;
 
         return (
@@ -45,12 +51,38 @@ class Keyboard extends React.Component {
                         )}
                     </div>
                 )}
+                <div className='keyboardLanguage'>
+                    <span
+                        className='frenchKeyboard'
+                        onClick={this.handleKeyboardLanguageChange}
+                    >
+                        Azerty
+                    </span>
+                    <span
+                        className='englishKeyboard'
+                        onClick={this.handleKeyboardLanguageChange}
+                    >
+                        Qwerty
+                    </span>
+                </div>
             </div>
         );
     }
 
     handleClick(e) {
         this.props.handleGuess(e.currentTarget.textContent);
+    }
+
+    handleKeyboardLanguageChange(e) {
+        let keyboardLanguage = e.currentTarget.classList[0];
+
+        keyboardLanguage = this.acceptedLanguage.includes(keyboardLanguage)
+            ? keyboardLanguage
+            : 'french';
+
+        this.setState({
+            language: keyboardLanguage
+        });
     }
 }
 

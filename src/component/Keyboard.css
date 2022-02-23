@@ -7,3 +7,14 @@
     justify-content: center;
     align-items: center;
 }
+
+.keyboardLanguage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.keyboardLanguage > span {
+    margin: 10px;
+    border: solid 1px skyblue;
+    cursor: pointer;
+}

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4c559965-9f81-468b-830a-b8ce5cc29244" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Keyboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Keyboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Keyboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/KeyboardLetter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/KeyboardLetter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/KeyboardLetter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/KeyboardLetter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="idea.background.editor" value="D:\1 Images\lo\5.png,5,scale,top_center,flipH" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,7 +57,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -98,7 +96,8 @@
       <workItem from="1645301013421" duration="7668000" />
       <workItem from="1645376088768" duration="632000" />
       <workItem from="1645465883353" duration="11168000" />
-      <workItem from="1645526645652" duration="24810000" />
+      <workItem from="1645526645652" duration="26308000" />
+      <workItem from="1645614454907" duration="2463000" />
     </task>
     <servers />
   </component>
