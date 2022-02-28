@@ -1,4 +1,5 @@
 import './App.css';
+import AppHeader from './component/AppHeader';
 import Game from './component/Game';
 import Modal from "./component/Modal";
 import React from "react";
@@ -17,7 +18,9 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <header className="App-header"></header>
+                <AppHeader
+                    toggleModal={this.toggleModal}
+                />
 
                 <Game
                     toggleModal={this.toggleModal}

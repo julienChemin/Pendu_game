@@ -26,15 +26,19 @@ class KeyboardLetter extends React.Component {
             ? (this.props.isRightGuess
                 ? ' goodKeyboardLetter'
                 : ' wrongKeyboardLetter')
-            : ' clickable';
+            : this.props.attemptsLeft > 0
+                ? ' clickable'
+                : '';
 
         return classes;
     }
 
     getOnclickEvent() {
-        return this.props.guessed
-            ? null
-            : this.handleClick;
+        return this.props.attemptsLeft > 0
+            ? (this.props.guessed
+                ? null
+                : this.handleClick)
+            : null;
     }
 
     handleClick(e) {

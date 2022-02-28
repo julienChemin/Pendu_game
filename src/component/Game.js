@@ -2,6 +2,7 @@ import React from 'react';
 import Word from './Word';
 import GuessArea from './GuessArea';
 import Keyboard from './Keyboard';
+import GameFooter from './GameFooter';
 import './Game.css';
 
 /**
@@ -60,7 +61,12 @@ class Game extends React.Component {
                 <Keyboard
                     guesses={this.state.guesses}
                     handleGuess={this.handleGuess}
+                    attemptsLeft={this.state.attemptsLeft}
                 />
+
+                {this.state.attemptsLeft < 0 &&
+                    <GameFooter/>
+                }
             </section>
         );
     }

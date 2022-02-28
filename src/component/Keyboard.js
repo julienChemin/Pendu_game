@@ -44,16 +44,12 @@ class Keyboard extends React.Component {
                     <span
                         className='azertyKeyboard'
                         onClick={this.handleKeyboardLanguageChange}
-                    >
-                        Azerty
-                    </span>
+                    >Azerty</span>
 
                     <span
                         className='qwertyKeyboard'
                         onClick={this.handleKeyboardLanguageChange}
-                    >
-                        Qwerty
-                    </span>
+                    >Qwerty</span>
                 </div>
             </div>
         );
@@ -68,6 +64,7 @@ class Keyboard extends React.Component {
                     return <KeyboardLetter
                         key={letter}
                         value={letter}
+                        attemptsLeft={this.props.attemptsLeft}
                         guessed={letter in guesses}
                         isRightGuess={letter in guesses && guesses[letter]}
                         handleClick={this.handleClick}
