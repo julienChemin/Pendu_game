@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4c559965-9f81-468b-830a-b8ce5cc29244" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Keyboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/KeyboardLetter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/KeyboardLetter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -103,7 +103,7 @@
       <workItem from="1645614454907" duration="14186000" />
       <workItem from="1645692132423" duration="10353000" />
       <workItem from="1645992350168" duration="5669000" />
-      <workItem from="1646041836537" duration="1199000" />
+      <workItem from="1646041836537" duration="23184000" />
     </task>
     <servers />
   </component>

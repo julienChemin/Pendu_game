@@ -1,8 +1,10 @@
+import React from "react";
+
 import './App.css';
+
 import AppHeader from './component/AppHeader';
 import Game from './component/Game';
 import Modal from "./component/Modal";
-import React from "react";
 
 class App extends React.Component {
     constructor(props) {
@@ -16,6 +18,8 @@ class App extends React.Component {
     }
 
     render() {
+        const wordLength = '5';
+
         return (
             <div className="App">
                 <AppHeader
@@ -24,6 +28,7 @@ class App extends React.Component {
 
                 <Game
                     toggleModal={this.toggleModal}
+                    wordLength={wordLength}
                 />
 
                 <Modal
