@@ -20,6 +20,9 @@ class GuessArea extends React.Component {
 
         return (
             <div className='guessArea'>
+                <span>
+                    Wrong guesses:
+                </span>
                 {attempts}
             </div>
         );

@@ -40,7 +40,7 @@ class Game extends React.Component {
             word: getWord(this.props.wordLength),
             attemptsLeft: maxAttempts,
             guesses: {},
-            day: null,
+            date: new Date().toLocaleDateString(),
         }
 
         this.handleGuess = this.handleGuess.bind(this);
@@ -54,7 +54,7 @@ class Game extends React.Component {
     componentDidMount() {
         const data = this.getGameCookie();
 
-        data
+        JSON.parse(data)?.date === new Date().toLocaleDateString()
             ? this.setState(JSON.parse(data))
             : this.setGameCookie();
     }
@@ -87,7 +87,7 @@ class Game extends React.Component {
                 }
 
                 <button onClick={this.deleteGameCookie}>
-                    delete cookie
+                    retry
                 </button>
             </section>
         );

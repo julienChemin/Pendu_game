@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="4c559965-9f81-468b-830a-b8ce5cc29244" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AppHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AppHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Game.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Guess.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Guess.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GuessArea.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GuessArea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/GuessArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GuessArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Keyboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Keyboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/KeyboardLetter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/KeyboardLetter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Word.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Word.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +44,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="25FVFS1UT6hDoeBzBr80ui0hTZL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="idea.background.editor" value="D:\1 Images\lo\5.png,5,scale,top_center,flipH" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Fichier sublime/Bots Discord" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -103,7 +112,8 @@
       <workItem from="1645614454907" duration="14186000" />
       <workItem from="1645692132423" duration="10353000" />
       <workItem from="1645992350168" duration="5669000" />
-      <workItem from="1646041836537" duration="23184000" />
+      <workItem from="1646041836537" duration="23554000" />
+      <workItem from="1646130216129" duration="9428000" />
     </task>
     <servers />
   </component>

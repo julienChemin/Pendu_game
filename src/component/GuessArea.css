@@ -3,5 +3,10 @@
     justify-content: center;
     align-items: center;
 
-    border: solid 1px green;
+    background-color: #353b46;
+    color: cornflowerblue;
+
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 1px cornflowerblue;
 }

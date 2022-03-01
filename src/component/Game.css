@@ -1,8 +1,11 @@
 #gameScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 90%;
     height: 80vh;
 
     margin: 30px auto 0 auto;
-
-    border: solid 1px black;
 }
