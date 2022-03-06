@@ -15,17 +15,34 @@ const keyboards = {
     ],
 };
 
+function ButtonKeyboardLanguage(props) {
+    const language = props.language;
+    const currentLanguage = props.currentLanguage;
+
+    const displayedLanguage = `${language[0].toUpperCase()}${language.slice(1)}`;
+    const classes = `${language} ${language === currentLanguage ? 'selectedKeyboardLanguage' : ''}`;
+
+    return (
+        <span
+            className={classes}
+            onClick={props.onClick}
+        >
+            {displayedLanguage}
+        </span>
+    );
+}
+
 class Keyboard extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            language: 'azertyKeyboard',
+            language: 'azerty',
         };
 
-        this.acceptedLanguage = [
-            'azertyKeyboard',
-            'qwertyKeyboard',
+        this.acceptedKeyboard = [
+            'azerty',
+            'qwerty',
         ];
 
         this.handleClick = this.handleClick.bind(this);
@@ -40,16 +57,15 @@ class Keyboard extends React.Component {
             <div className='keyboard'>
                 {keyboardRows}
 
-                <div className='keyboardLanguage'>
-                    <span
-                        className='azertyKeyboard'
-                        onClick={this.handleKeyboardLanguageChange}
-                    >Azerty</span>
-
-                    <span
-                        className='qwertyKeyboard'
-                        onClick={this.handleKeyboardLanguageChange}
-                    >Qwerty</span>
+                <div className='keyboardLanguages'>
+                    {this.acceptedKeyboard.map(language =>
+                        <ButtonKeyboardLanguage
+                            key={language}
+                            language={language}
+                            currentLanguage={this.state.language}
+                            onClick={this.handleKeyboardLanguageChange}
+                        />
+                    )}
                 </div>
             </div>
         );
@@ -58,7 +74,7 @@ class Keyboard extends React.Component {
     getKeyboardRows() {
         const guesses = this.props.guesses;
 
-        return keyboards[`${this.state.language}Rows`].map((row, index) => {
+        return keyboards[`${this.state.language}KeyboardRows`].map((row, index) => {
             return <div key={index} className='keyboardRow'>
                 {row.map(letter => {
                     return <KeyboardLetter
@@ -81,7 +97,7 @@ class Keyboard extends React.Component {
     handleKeyboardLanguageChange(e) {
         let keyboardLanguage = e.currentTarget.classList[0];
 
-        keyboardLanguage = this.acceptedLanguage.includes(keyboardLanguage)
+        keyboardLanguage = this.acceptedKeyboard.includes(keyboardLanguage)
             ? keyboardLanguage
             : 'azerty';
 
