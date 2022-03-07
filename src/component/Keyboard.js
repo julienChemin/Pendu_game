@@ -80,7 +80,7 @@ class Keyboard extends React.Component {
                     return <KeyboardLetter
                         key={letter}
                         value={letter}
-                        attemptsLeft={this.props.attemptsLeft}
+                        gameFinished={this.props.gameFinished}
                         guessed={letter in guesses}
                         isRightGuess={letter in guesses && guesses[letter]}
                         handleClick={this.handleClick}

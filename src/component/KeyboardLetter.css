@@ -10,13 +10,16 @@
     border: solid 1px black;
     border-radius: 3px;
     background-color: lightslategrey;
+
+    cursor: default;
 }
 
-.keyboardLetter:hover:not(.goodKeyboardLetter, .wrongKeyboardLetter) {
+.clickable:hover {
     border-color: cornflowerblue;
     background-color: cornflowerblue;
 
     font-size: 1.1em;
+    cursor: pointer;
 }
 
 .wrongKeyboardLetter {
@@ -28,8 +31,4 @@
 .goodKeyboardLetter {
     color: green;
     background-color: darkseagreen;
-}
-
-.clickable {
-    cursor: pointer;
 }

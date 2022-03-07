@@ -1,0 +1,37 @@
+.statNav {
+    width: 100%;
+    height: auto;
+
+    color: cornflowerblue;
+}
+
+.statNav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+
+.statNav > ul > li {
+    width: 30%;
+
+    padding: 3px 0;
+    border: solid 1px cornflowerblue;
+    border-radius: 3px;
+}
+
+.statNav > ul > li:hover:not(.selectedStatNav) {
+    background-color: #414754;
+
+    cursor: pointer;
+}
+
+.selectedStatNav {
+    color: white;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue!important;
+}

@@ -1,0 +1,40 @@
+.boardData {
+    list-style-type: none;
+    color: cornflowerblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardData > li {
+    width: 100%;
+    height: 25px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.loadBar {
+    width: 50%;
+    height: 100%;
+
+    padding: 3px;
+    border: solid 1px cornflowerblue;
+    border-radius: 3px;
+
+    padding: 0;
+    margin: 5px;
+}
+
+.loadBar > div {
+    width: 0%;
+    height: 100%;
+    background-color: cornflowerblue;
+
+    transition: 0.5s ease-out;
+}

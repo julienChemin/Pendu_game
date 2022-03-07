@@ -30,15 +30,13 @@ function sanitizeWord(word) {
     });
 }
 
-const maxAttempts = 8;
-
 class Game extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             word: getWord(this.props.wordLength),
-            attemptsLeft: maxAttempts,
+            attemptsLeft: this.props.maxAttempts,
             guesses: {},
             date: new Date().toLocaleDateString(),
         }
@@ -72,7 +70,7 @@ class Game extends React.Component {
                 />
 
                 <GuessArea
-                    attempts={maxAttempts}
+                    attempts={this.props.maxAttempts}
                     wrongGuesses={this.getWrongGuesses()}
                 />
 
@@ -80,6 +78,8 @@ class Game extends React.Component {
                     guesses={this.state.guesses}
                     handleGuess={this.handleGuess}
                     attemptsLeft={this.state.attemptsLeft}
+                    handleEndGame={this.props.handleEndGame}
+                    gameFinished={this.state.attemptsLeft < 1 || !this.getRightGuessesMap().includes(false)}
                 />
 
                 {this.state.attemptsLeft < 0 &&
@@ -120,11 +120,10 @@ class Game extends React.Component {
             : this.state.attemptsLeft - 1;
         let guesses = this.state.guesses;
         guesses[guess] = isRightGuess;
+        const gameFinished = attemptsLeft < 1 || !this.getRightGuessesMap().includes(false);
 
-        if (attemptsLeft < 1) {
-            setTimeout(() => {
-                this.props.toggleModal();
-            }, 500);
+        if (gameFinished) {
+            this.props.handleEndGame(attemptsLeft);
         }
 
         this.setState({
