@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4c559965-9f81-468b-830a-b8ce5cc29244" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/word_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/word_5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Keyboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/KeyboardLetter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/KeyboardLetter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/KeyboardLetter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/KeyboardLetter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Letter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Letter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Letter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Letter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/StatBoard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/StatBoard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/StatBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/StatBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Word.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Word.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="idea.background.editor" value="D:\1 Images\lo\5.png,5,scale,top_center,flipH" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -71,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\pendu\public" />
       <recent name="C:\wamp\www\pendu\src\component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -112,7 +115,8 @@
       <workItem from="1646041836537" duration="23554000" />
       <workItem from="1646130216129" duration="10371000" />
       <workItem from="1646592598201" duration="9101000" />
-      <workItem from="1646644767711" duration="23016000" />
+      <workItem from="1646644767711" duration="23280000" />
+      <workItem from="1646732954967" duration="14011000" />
     </task>
     <servers />
   </component>

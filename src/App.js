@@ -58,10 +58,10 @@ class App extends React.Component {
         });
     }
 
-    handleEndGame(attemptsLeft) {
+    handleEndGame(attemptsLeft, timeoutValue = 500) {
         setTimeout(() => {
             this.toggleModal();
-        }, 400);
+        }, timeoutValue);
 
         this.saveUserGameState(attemptsLeft);
     }

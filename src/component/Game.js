@@ -13,10 +13,10 @@ import GameFooter from './GameFooter';
  * @returns {String}
  */
 function getWord(length) {
-    const data = window['words' + length];
+    const data = window['words_' + length];
     const max = data.length;
     const index = Math.floor(Math.random() * max);
-
+console.log(data[index]);
     return sanitizeWord(data[index]);
 }
 
@@ -67,6 +67,8 @@ class Game extends React.Component {
                 <Word
                     word={this.state.word}
                     rightGuessesMap={this.getRightGuessesMap()}
+                    attemptsLeft={this.state.attemptsLeft}
+                    gameFinished={this.state.attemptsLeft < 1 || !this.getRightGuessesMap().includes(false)}
                 />
 
                 <GuessArea
@@ -78,7 +80,6 @@ class Game extends React.Component {
                     guesses={this.state.guesses}
                     handleGuess={this.handleGuess}
                     attemptsLeft={this.state.attemptsLeft}
-                    handleEndGame={this.props.handleEndGame}
                     gameFinished={this.state.attemptsLeft < 1 || !this.getRightGuessesMap().includes(false)}
                 />
 
@@ -123,7 +124,9 @@ class Game extends React.Component {
         const gameFinished = attemptsLeft < 1 || !this.getRightGuessesMap().includes(false);
 
         if (gameFinished) {
-            this.props.handleEndGame(attemptsLeft);
+            const timeoutValue = (this.state.word.length * 40) + 800;
+
+            this.props.handleEndGame(attemptsLeft, timeoutValue);
         }
 
         this.setState({

@@ -34,7 +34,7 @@
 .loadBar > div {
     width: 0%;
     height: 100%;
-    background-color: cornflowerblue;
+    background: linear-gradient(cornflowerblue, skyblue);
 
     transition: 0.5s ease-out;
 }

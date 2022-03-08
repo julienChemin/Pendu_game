@@ -1,7 +1,39 @@
 .letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
     margin: 15px;
+    padding: 5px;
+
+    background-color: #353b46;
+    backface-visibility: hidden;
+
+    border-radius: 3px;
+    border-top: solid 1px #313742;
+    border-right: solid 1px #313742;
+    border-bottom: solid 1px #25292f;
+    border-left: solid 1px #25292f;
 
     font-size: 3em;
 
     cursor: default;
+    transform: rotateY(0);
+    perspective: 100px;
+    transition: 0.5s linear;
+}
+
+.guessedLetter {
+    background-color: #5d6472;
+}
+
+.notGuessedLetter {
+    color: #b23232;
+
+    border-top: solid 1px #b44141;
+    border-right: solid 1px #b44141;
+    border-bottom: solid 1px #b23232;
+    border-left: solid 1px #b23232;
 }
