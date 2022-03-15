@@ -1,7 +1,7 @@
 import { getCookie, setCookie } from 'react-use-cookie';
 import React from 'react';
 
-import './Game.css';
+import '../style/component/Game.css';
 
 import Word from './Word';
 import GuessArea from './GuessArea';
@@ -16,7 +16,7 @@ function getWord(length) {
     const data = window['words_' + length];
     const max = data.length;
     const index = Math.floor(Math.random() * max);
-console.log(data[index]);
+
     return sanitizeWord(data[index]);
 }
 

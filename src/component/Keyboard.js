@@ -1,6 +1,6 @@
 import React from 'react';
 import KeyboardLetter from './KeyboardLetter';
-import './Keyboard.css';
+import '../style/component/Keyboard.css';
 
 const keyboards = {
     azertyKeyboardRows: [

@@ -1,5 +1,5 @@
 import React from 'react';
-import './KeyboardLetter.css';
+import '../style/component/KeyboardLetter.css';
 
 class KeyboardLetter extends React.Component {
     constructor(props) {

@@ -2,7 +2,7 @@ import React from 'react';
 import StatNav from './StatNav';
 import StatBoard from './StatBoard';
 
-import './Modal.css';
+import '../style/component/Modal.css';
 
 class Modal extends React.Component {
     constructor(props) {

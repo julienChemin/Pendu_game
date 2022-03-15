@@ -1,5 +1,5 @@
 import React from 'react';
-import './GameFooter.css';
+import '../style/component/GameFooter.css';
 
 class GameFooter extends React.Component {
     render() {

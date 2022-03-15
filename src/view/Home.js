@@ -1,16 +1,16 @@
 import React from "react";
 
-import './App.css';
+import '../style/component/App.css';
 
-import AppHeader from './component/AppHeader';
-import Game from './component/Game';
-import Modal from "./component/Modal";
+import AppHeader from '../component/AppHeader';
+import Game from '../component/Game';
+import Modal from "../component/Modal";
 import {getCookie, setCookie} from "react-use-cookie";
 
 const maxAttempts = 8;
 const gameModes = ['4', '5', '6'];
 
-class App extends React.Component {
+class Home extends React.Component {
     constructor(props) {
         super(props);
 
@@ -95,4 +95,4 @@ class App extends React.Component {
     }
 }
 
-export default App
+export default Home

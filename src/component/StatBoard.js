@@ -1,5 +1,5 @@
 import React from 'react';
-import './StatBoard.css';
+import '../style/component/StatBoard.css';
 
 class StatBoard extends React.Component {
     constructor(props) {

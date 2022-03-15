@@ -1,6 +1,6 @@
 import React from 'react';
 import Guess from './Guess';
-import './GuessArea.css';
+import '../style/component/GuessArea.css';
 
 class GuessArea extends React.Component {
     constructor(props) {

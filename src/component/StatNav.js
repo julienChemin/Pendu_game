@@ -1,5 +1,5 @@
 import React from 'react';
-import './StatNav.css';
+import '../style/component/StatNav.css';
 
 class StatNav extends React.Component {
     constructor(props) {
