@@ -11,7 +11,14 @@ ReactDOM.render(
       <Router>
           <Routes>
               <Route path="/" element={<Home/>} />
-              <Route path="/discordApp/*" element={<DiscordApp/>} />
+
+              <Route path="/discordApp" element={<DiscordApp/>} >
+                  <Route path=":action" />
+              </Route>
+
+              <Route path="/db" element={<DiscordApp/>} >
+                  <Route path=":action" />
+              </Route>
           </Routes>
       </Router>
   </React.StrictMode>,
